@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Untuk Kamu</div>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                <li><a href="#" onclick="showPage('ucapan')">Motivasi Buat Lu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <section class="hero-section">
+            <div class="video-container">
+                <video id="heroVideo" autoplay loop playsinline>
+                    <source src="assets/videos/video.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <button id="audioToggle" class="audio-toggle">
+                <span id="audioIcon">🔊</span>
+            </button>
+            <div class="hero-content">
+                <h1>Hai</h1>
+                <p>Aku tau ini mungkin random banget, tapi aku pengen bikin sesuatu yang simpel buat kamu. Semoga kamu suka, dan semoga hari-harimu selalu menyenangkan.</p>
+                <a href="#" onclick="showPage('gallery')" class="cta-button">Lihat</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- GALLERY PAGE -->
+    <div id="gallery" class="page">
+        <section class="content-section">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/1.jpg" alt="Photo 1" class="gallery-photo">
+                    <div class="photo-caption">Si Cantik Gemes</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/2.jpg" alt="Photo 2" class="gallery-photo">
+                    <div class="photo-caption">Lucu Bangett</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/3.jpg" alt="Photo 3" class="gallery-photo">
+                    <div class="photo-caption">Ini kaya nahan malu WKWK</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/4.jpg" alt="Photo 4" class="gallery-photo">
+                    <div class="photo-caption">WLEE AKU CANTIK</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/5.jpg" alt="Photo 5" class="gallery-photo">
+                    <div class="photo-caption">Mirror Selfie gatau buat apa(?)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/6.jpg" alt="Photo 6" class="gallery-photo">
+                    <div class="photo-caption">MANIS BANGET ASDFGHJKL</div>
+                </div>
+            </div>
+            
+            <div class="music-section">
+                <h3>Favorite Music</h3>
+                <div class="music-container">
+                    <div class="music-item">    
+                        <p class="song-title">Ours to Keep - Kandis</p>
+                        <audio controls>
+                            <source src="assets/music/ours-to-keep.mp3" type="audio/mpeg">
+                            Browser kamu tidak mendukung audio player.
+                        </audio>
+                    </div>
+                    <div class="music-item">
+                        <p class="song-title">Keep You Safe - Yahya</p>
+                        <audio controls>
+                            <source src="assets/music/keep-you-safe.mp3" type="audio/mpeg">
+                            Browser kamu tidak mendukung audio player.
+                        </audio>
+                    </div>
+                </div>
+                
+                <div style="max-width: 800px; margin: 3rem auto 0; text-align: center;">
+                    <p style="color: #c7d2fe; font-size: 1.15rem; line-height: 1.8;">
+                        Kadang susah nyampein kata-kata langsung, jadi aku bikin ini aja. Aku harap kamu bisa tetep semangat terus, apapun yang lagi kamu hadapin sekarang. Kamu lebih kuat dari yang kamu kira, kok. Semangat Sayang:P
+                        Lagunya lagu fav kamu sama lagu fav aku, aku satuin ajasih
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- UCAPAN PAGE -->
+    <div id="ucapan" class="page">
+        <section class="content-section">
+            <h2 class="section-title">Semoga Ga Ketawa yaa ucapan dari gua(:)</h2>
+            <div class="ucapan-grid">
+                <div class="ucapan-card">
+                    <div class="ucapan-icon">✉</div>
+                    <h3>Motivasi Alay</h3>
+                    <p>Mungkin ya gua gabisa kasih banyak sesuatu yang kaya orang diluaran sana, tapi semoga bisa berkesan buat lu. Semangat terus kerjanya, semangat buat ngadepin orang rumah juga. Banyakin sabar dan kuat ngadepin LS brengsek itu. Semoga dengan adanya web ini makin apa ya? makin bahagia sama balikin mood mungkin...</p>
+                </div>
+                <div class="ucapan-card">
+                    <div class="ucapan-icon">✨</div>
+                    <h3>Keep Shining</h3>
+                    <p>Terlalu hebat buat lu yang udah laluin banyak hal selama ini. yang tau semuanya cuman dirilu. Gua cuman bisa bilang lu terlalu hebat, keren dan gua sangat seneng bisa kenal. Tunjukin kalo lu itu bercahyo cahyo yap. Keep shining, stay cheerful, don't be sad okayy??</p>
+                </div>
+                <div class="ucapan-card">
+                    <div class="ucapan-icon">💕</div>
+                    <h3>Terima Kasih</h3>
+                    <p>Terima kasih ajasi udah mau jadi temen cerita, terus bikin gua bahagia, tapi gatau dari lunya gimana. Soalnya gua seneng aja ngerasa dicintai pada saat itu, dan ada temen cerita lagi, temen bahagia dll juga. Whatever you do, as long as it's good and makes you happy, just do it. I'm proud of you. Maaf yaa brondongmu ini terlalu alay(_)(_)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
